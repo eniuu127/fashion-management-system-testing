@@ -1,44 +1,61 @@
 # HỆ THỐNG QUẢN LÝ THỜI TRANG
-
 **Software Testing Portfolio | Dự án học tập (2026)**
 
-## Tổng quan hệ thống
+## 1. Giới thiệu dự án
 
-Website quản lý thời trang sử dụng Java Spring Boot và MySQL; phục vụ khách hàng, nhân viên và quản trị viên, gồm các nghiệp vụ tài khoản, sản phẩm, giỏ hàng, đơn hàng và thanh toán. Repository này tập trung trình bày **tài liệu kiểm thử**, không thay thế kho mã nguồn phát triển hệ thống.
+Hệ thống quản lý thời trang là ứng dụng web thương mại điện tử B2C, hỗ trợ khách hàng mua sắm trực tuyến và hỗ trợ nhân viên, quản trị viên quản lý sản phẩm, biến thể, tồn kho, khuyến mãi và đơn hàng.
 
-## Phạm vi và phương pháp kiểm thử
+- **Công nghệ hệ thống:** Java Spring Boot, MySQL, HTML, CSS, JavaScript.
+- **Phương thức thanh toán:** COD và PayOS.
+- **Chức năng hỗ trợ:** Chatbot AI tìm kiếm và gợi ý sản phẩm.
+- **Repository mã nguồn hệ thống:** [haiha74/DALN](https://github.com/haiha74/DALN).
 
-Theo báo cáo học phần *Đánh giá và kiểm định chất lượng phần mềm*, phạm vi kiểm thử trọng tâm gồm:
+Repository này tập trung trình bày **tài liệu và kết quả thực hành kiểm thử thủ công (Manual Testing)**; mã nguồn phát triển ứng dụng được lưu trữ riêng tại repository liên kết ở trên.
 
-- **UC01 – Đăng ký:** thông tin hợp lệ, trùng email, dữ liệu trống, định dạng không hợp lệ.
-- **UC02 – Đăng nhập:** xác thực tài khoản, mật khẩu sai, phiên đăng nhập và quyền truy cập.
-- **UC05 – Giỏ hàng:** thêm/xóa sản phẩm, điều chỉnh số lượng, kiểm tra biến thể và tồn kho.
+## 2. Phạm vi kiểm thử
 
-Phương pháp nhóm thực hành: Manual Testing, Unit Testing (JUnit 5, Mockito, JaCoCo), UI Automation (Selenium WebDriver), Performance Testing (Apache JMeter). Việc nêu các phương pháp này phản ánh báo cáo của **nhóm học phần**, không có nghĩa mọi kịch bản hay mã nguồn đều được đăng tại đây.
+Bộ kiểm thử gồm **177 Test Case thuộc 14 nhóm chức năng**, bao phủ các luồng nghiệp vụ chính:
 
-## Kết quả từ bảng Test Case Excel
+- **Tài khoản:** Đăng ký, đăng nhập và quản lý phiên.
+- **Mua sắm:** Danh mục, tìm kiếm, chi tiết sản phẩm, biến thể, giỏ hàng, voucher, đặt hàng và thanh toán.
+- **Đơn hàng:** Trạng thái đơn hàng và đánh giá sản phẩm.
+- **Quản trị:** Sản phẩm, biến thể, tồn kho và khuyến mãi.
+- **Chức năng hỗ trợ:** Chatbot tìm kiếm sản phẩm, banner và giao diện.
 
-| Kết quả | Số lượng |
-|---|---:|
-| Đạt | 140 |
-| Không đạt | 15 |
-| Chưa test | 22 |
-| Không chạy | 0 |
-| **Tổng** | **177** |
+Kiểm thử được thực hiện chủ yếu theo phương pháp **Manual Testing kết hợp Black-box Testing**, sử dụng các kỹ thuật **Equivalence Partitioning**, **Boundary Value Analysis** và **Scenario-based Testing**.
 
-- **Tỷ lệ đạt / tổng số ca:** 140/177 ≈ **79,1%**.
-- **Tỷ lệ đạt / số ca đã có kết luận Đạt hoặc Không đạt:** 140/155 ≈ **90,3%**.
-- Những con số trên lấy từ phần thống kê của file Excel đã cung cấp; không phải phép kiểm thử mới được chạy trên GitHub.
-- **15 trường hợp Không đạt không tự động tương ứng với 15 Bug Report độc lập.** Hiện chưa có hồ sơ lỗi riêng đã được xác minh.
+**Công cụ hỗ trợ:** Microsoft Excel, Google Chrome, Chrome DevTools và Postman.
 
-## Cấu trúc tài liệu
+## 3. Kết quả thực thi Test Case
 
-- [01-Test-Plan](01-Test-Plan/): mô tả kế hoạch, mục tiêu và phạm vi kiểm thử.
-- [02-Test-Cases](02-Test-Cases/): giới thiệu bảng Test Case Excel; chờ tải file bảng tính gốc.
-- [03-Test-Results](03-Test-Results/): tổng hợp kết quả từ bảng Excel.
+| Trạng thái | Số lượng | Tỷ lệ trên tổng |
+|---|---:|---:|
+| Pass (Đạt) | 140 | 79,1% |
+| Fail (Không đạt) | 15 | 8,5% |
+| Not Tested (Chưa kiểm thử) | 22 | 12,4% |
+| **Tổng** | **177** | **100%** |
 
-## Nguồn tài liệu và phạm vi đóng góp
+- **Tỷ lệ thực thi:** 155/177 = **87,6%**.
+- **Tỷ lệ Pass trên các Test Case đã thực thi:** 140/155 = **90,3%**.
 
-Dựa trên bảng Test Case và báo cáo của hai nhóm học phần/đồ án liên quan tới cùng hệ thống. Thành quả phát triển, kiểm thử và các số liệu trong báo cáo có phần đóng góp của nhiều thành viên. Không quy toàn bộ công việc nhóm thành sản phẩm cá nhân.
+Số liệu được tổng hợp từ bộ Test Case đã ghi nhận, không phải kết quả của một lần chạy kiểm thử mới. Các trường hợp Fail chưa được quy đổi thành số lượng Bug Report độc lập.
 
-**Lưu ý:** Chưa có ảnh minh chứng lỗi hoặc Bug Report riêng, nên không tạo dữ liệu giả. Tài liệu gốc chỉ nên công khai sau khi kiểm tra thông tin cá nhân và quyền chia sẻ.
+## 4. Tài liệu kiểm thử
+
+| Thư mục | Nội dung |
+|---|---|
+| [01-Test-Plan](./01-Test-Plan/) | Kế hoạch kiểm thử: mục tiêu, phạm vi, phương pháp, môi trường, tiêu chí và rủi ro. |
+| [02-Test-Cases](./02-Test-Cases/) | Bộ 177 Test Case, dữ liệu kiểm thử và kết quả thực thi ở định dạng Excel/PDF. |
+
+**Xem nhanh tài liệu:**
+
+- [Test Plan (PDF)](./01-Test-Plan/Test%20Plan.pdf)
+- [Test Cases (Excel)](./02-Test-Cases/CV_TestCase_ĐALN.xlsx)
+- [Test Cases (PDF)](./02-Test-Cases/CV_TestCase_ĐALN.pdf)
+- [Mã nguồn hệ thống](https://github.com/haiha74/DALN)
+
+## 5. Phạm vi đóng góp và lưu ý
+
+Đây là dự án học tập có sự tham gia của nhiều thành viên. Repository này giới thiệu phần tài liệu kiểm thử và số liệu ghi nhận trong quá trình thực hành, **không khẳng định toàn bộ công việc phát triển hoặc kiểm thử là sản phẩm cá nhân**.
+
+Các hoạt động kiểm thử đơn vị, kiểm thử tự động, hiệu năng và bảo mật chuyên sâu không nằm trong phạm vi của Test Plan thủ công được trình bày tại đây. Hiện chưa công bố Bug Report hoặc Evidence độc lập; các kết quả kiểm thử cần được hiểu trong phạm vi bộ Test Case hiện có.
