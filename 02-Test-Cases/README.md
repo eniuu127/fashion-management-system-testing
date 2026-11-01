@@ -52,6 +52,7 @@ Các trường hợp không đạt và chưa thực hiện được ghi nhận �
 
 ## 5. Tài liệu
 
-**[Xem bộ Test Case (Excel)](./TestCase_DALN.xlsm)**
+- [**Xem bộ Test Case (PDF)**](./CV_TestCase_ĐALN.pdf) – Bản PDF phục vụ xem trực tiếp trên GitHub.
+- [**Xem bộ Test Case (Excel)**](./CV_TestCase_ĐALN.xlsx) – File Excel chứa các trường hợp kiểm thử và kết quả thực thi.
 
 Bộ Test Case được xây dựng theo phạm vi kiểm thử đã xác định trong Test Plan, làm cơ sở cho hoạt động thực thi và tổng hợp kết quả kiểm thử hệ thống.
