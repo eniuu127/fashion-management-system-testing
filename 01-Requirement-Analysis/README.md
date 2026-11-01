@@ -4,7 +4,7 @@
 
 Thư mục `01-Requirement-Analysis` lưu trữ tài liệu **Đặc tả yêu cầu phần mềm (Software Requirements Specification – SRS)** của **Đồ án liên ngành Công nghệ thông tin (2026)**.
 
-Đây là tài liệu tôi trực tiếp thực hiện trong quá trình tham gia đồ án, nhằm hệ thống hóa các yêu cầu và mô tả luồng nghiệp vụ của ứng dụng web quản lý và bán hàng thời trang. Tài liệu là cơ sở tham khảo cho việc thiết kế hệ thống, lập kế hoạch kiểm thử và xây dựng các Test Case.
+Tài liệu được xây dựng trong quá trình thực hiện đồ án, nhằm hệ thống hóa các yêu cầu và mô tả luồng nghiệp vụ của ứng dụng web quản lý và bán hàng thời trang. Tài liệu là cơ sở tham khảo cho việc thiết kế hệ thống, lập kế hoạch kiểm thử và xây dựng các Test Case.
 
 ## 2. Nội dung tài liệu SRS
 
@@ -23,6 +23,6 @@ Thư mục `01-Requirement-Analysis` lưu trữ tài liệu **Đặc tả yêu c
 
 ## 4. Vai trò trong đồ án
 
-**Phân tích nghiệp vụ và kiểm thử phần mềm.** Tôi tham gia phân tích yêu cầu, xây dựng tài liệu đặc tả và mô hình hóa các luồng nghiệp vụ, đồng thời sử dụng yêu cầu đã xác định để lập kế hoạch và thiết kế trường hợp kiểm thử.
+**Phân tích nghiệp vụ và kiểm thử phần mềm:** Phân tích yêu cầu, xây dựng tài liệu đặc tả, mô hình hóa các luồng nghiệp vụ; lập kế hoạch và thiết kế trường hợp kiểm thử dựa trên yêu cầu đã xác định.
 
 Dự án được thực hiện theo nhóm trong khuôn khổ Đồ án liên ngành; repository mã nguồn liên kết ở trên thể hiện sản phẩm phần mềm của nhóm.
