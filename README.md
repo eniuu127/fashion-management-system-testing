@@ -1,34 +1,44 @@
 # HỆ THỐNG QUẢN LÝ THỜI TRANG
 
-> Portfolio kiểm thử phần mềm – dự án thực hành
+**Software Testing Portfolio | Dự án học tập (2026)**
 
-## 1. Tổng quan
+## Tổng quan hệ thống
 
-Dự án thực hành phân tích nghiệp vụ và kiểm thử phần mềm cho **Hệ thống quản lý thời trang**. Repository lưu trữ tài liệu nhằm minh chứng quá trình lập kế hoạch, thiết kế và thực hiện kiểm thử.
+Website quản lý thời trang sử dụng Java Spring Boot và MySQL; phục vụ khách hàng, nhân viên và quản trị viên, gồm các nghiệp vụ tài khoản, sản phẩm, giỏ hàng, đơn hàng và thanh toán. Repository này tập trung trình bày **tài liệu kiểm thử**, không thay thế kho mã nguồn phát triển hệ thống.
 
-- **Thời gian:** 05/2026 – 10/2026
-- **Vai trò:** Phân tích nghiệp vụ và kiểm thử phần mềm
-- **Công cụ:** Excel, Postman, Chrome DevTools
+## Phạm vi và phương pháp kiểm thử
 
-## 2. Công việc đã thực hành
+Theo báo cáo học phần *Đánh giá và kiểm định chất lượng phần mềm*, phạm vi kiểm thử trọng tâm gồm:
 
-- Phân tích yêu cầu và xây dựng sơ đồ ca sử dụng.
-- Lập kế hoạch kiểm thử.
-- Thiết kế và thực hiện Test Case cho các chức năng chính.
-- Kiểm thử chức năng, giao diện, dữ liệu đầu vào và luồng xử lý nghiệp vụ.
-- Sử dụng Postman và Chrome DevTools hỗ trợ kiểm tra hệ thống.
-- Ghi nhận và tổng hợp kết quả kiểm thử theo tài liệu thực tế.
+- **UC01 – Đăng ký:** thông tin hợp lệ, trùng email, dữ liệu trống, định dạng không hợp lệ.
+- **UC02 – Đăng nhập:** xác thực tài khoản, mật khẩu sai, phiên đăng nhập và quyền truy cập.
+- **UC05 – Giỏ hàng:** thêm/xóa sản phẩm, điều chỉnh số lượng, kiểm tra biến thể và tồn kho.
 
-## 3. Tài liệu minh chứng
+Phương pháp nhóm thực hành: Manual Testing, Unit Testing (JUnit 5, Mockito, JaCoCo), UI Automation (Selenium WebDriver), Performance Testing (Apache JMeter). Việc nêu các phương pháp này phản ánh báo cáo của **nhóm học phần**, không có nghĩa mọi kịch bản hay mã nguồn đều được đăng tại đây.
 
-| Thư mục | Nội dung | Trạng thái |
-| --- | --- | --- |
-| [`01-Test-Plan`](01-Test-Plan/) | Kế hoạch kiểm thử | Chờ bổ sung tài liệu gốc |
-| [`02-Test-Cases`](02-Test-Cases/) | Test Case và dữ liệu kiểm thử | Chờ bổ sung file Excel gốc |
-| [`03-Test-Results`](03-Test-Results/) | Báo cáo hoặc bảng tổng hợp thực thi (nếu có) | Chưa bổ sung |
+## Kết quả từ bảng Test Case Excel
 
-**Lưu ý:** Repository hiện là bộ khung portfolio. Chưa đăng Bug Report hoặc ảnh Evidence vì chưa có tài liệu tương ứng. Không sử dụng dữ liệu kiểm thử minh họa để thay thế kết quả thực tế.
+| Kết quả | Số lượng |
+|---|---:|
+| Đạt | 140 |
+| Không đạt | 15 |
+| Chưa test | 22 |
+| Không chạy | 0 |
+| **Tổng** | **177** |
 
-## 4. Cách xem tài liệu
+- **Tỷ lệ đạt / tổng số ca:** 140/177 ≈ **79,1%**.
+- **Tỷ lệ đạt / số ca đã có kết luận Đạt hoặc Không đạt:** 140/155 ≈ **90,3%**.
+- Những con số trên lấy từ phần thống kê của file Excel đã cung cấp; không phải phép kiểm thử mới được chạy trên GitHub.
+- **15 trường hợp Không đạt không tự động tương ứng với 15 Bug Report độc lập.** Hiện chưa có hồ sơ lỗi riêng đã được xác minh.
 
-Mở từng thư mục bên trên và xem/tải các file sau khi được bổ sung. File Excel có thể cần mở bằng Microsoft Excel để hiển thị đầy đủ định dạng.
+## Cấu trúc tài liệu
+
+- [01-Test-Plan](01-Test-Plan/): mô tả kế hoạch, mục tiêu và phạm vi kiểm thử.
+- [02-Test-Cases](02-Test-Cases/): giới thiệu bảng Test Case Excel; chờ tải file bảng tính gốc.
+- [03-Test-Results](03-Test-Results/): tổng hợp kết quả từ bảng Excel.
+
+## Nguồn tài liệu và phạm vi đóng góp
+
+Dựa trên bảng Test Case và báo cáo của hai nhóm học phần/đồ án liên quan tới cùng hệ thống. Thành quả phát triển, kiểm thử và các số liệu trong báo cáo có phần đóng góp của nhiều thành viên. Không quy toàn bộ công việc nhóm thành sản phẩm cá nhân.
+
+**Lưu ý:** Chưa có ảnh minh chứng lỗi hoặc Bug Report riêng, nên không tạo dữ liệu giả. Tài liệu gốc chỉ nên công khai sau khi kiểm tra thông tin cá nhân và quyền chia sẻ.
