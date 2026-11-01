@@ -1,5 +1,5 @@
 # HỆ THỐNG QUẢN LÝ THỜI TRANG
-**Software Testing Portfolio | Dự án học tập (2026)**
+**Software Testing Portfolio | Đồ án liên ngành Công nghệ thông tin 2026**
 
 ## 1. Giới thiệu dự án
 
