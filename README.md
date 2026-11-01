@@ -55,9 +55,3 @@ Số liệu được tổng hợp từ bộ Test Case đã ghi nhận, không ph
 - [Test Cases (Excel)](./03-Test-Cases/CV_TestCase_ĐALN.xlsx)
 - [Test Cases (PDF)](./03-Test-Cases/CV_TestCase_ĐALN.pdf)
 - [Mã nguồn hệ thống](https://github.com/haiha74/DALN)
-
-## 5. Phạm vi đóng góp và lưu ý
-
-Đây là dự án học tập có sự tham gia của nhiều thành viên. Repository này giới thiệu tài liệu phân tích yêu cầu, tài liệu kiểm thử và số liệu ghi nhận trong quá trình thực hành, **không khẳng định toàn bộ công việc phát triển hoặc kiểm thử là sản phẩm cá nhân**.
-
-Các hoạt động kiểm thử đơn vị, kiểm thử tự động, hiệu năng và bảo mật chuyên sâu không nằm trong phạm vi của Test Plan thủ công được trình bày tại đây. Hiện chưa công bố Bug Report hoặc Evidence độc lập; các kết quả kiểm thử cần được hiểu trong phạm vi bộ Test Case hiện có.
