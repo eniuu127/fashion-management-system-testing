@@ -2,7 +2,7 @@
 
 ## 1. Giới thiệu
 
-Thư mục `01-Test-Plan` lưu trữ tài liệu kế hoạch kiểm thử thủ công (Manual Test Plan) cho dự án **Hệ thống quản lý thời trang**.
+Thư mục `02-Test-Plan` lưu trữ tài liệu kế hoạch kiểm thử thủ công (Manual Test Plan) cho dự án **Hệ thống quản lý thời trang**.
 
 Tài liệu xác định mục tiêu, phạm vi, phương pháp, môi trường, chiến lược thực hiện và các tiêu chí đánh giá hoạt động kiểm thử, làm cơ sở cho việc thiết kế, thực thi Test Case và tổng hợp kết quả.
 

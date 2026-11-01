@@ -2,7 +2,7 @@
 
 ## 1. Giới thiệu
 
-Thư mục `02-Test-Cases` lưu trữ bộ Test Case phục vụ kiểm thử thủ công (Manual Testing) cho dự án **Hệ thống quản lý thời trang**.
+Thư mục `03-Test-Cases` lưu trữ bộ Test Case phục vụ kiểm thử thủ công (Manual Testing) cho dự án **Hệ thống quản lý thời trang**.
 
 Các Test Case được thiết kế nhằm kiểm tra chức năng, dữ liệu đầu vào, giao diện và các luồng nghiệp vụ chính của hệ thống. Mỗi trường hợp kiểm thử được xây dựng với các bước thực hiện, kết quả mong đợi và thông tin ghi nhận kết quả thực tế.
 

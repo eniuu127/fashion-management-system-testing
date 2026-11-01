@@ -40,18 +40,19 @@ Kiểm thử được thực hiện chủ yếu theo phương pháp **Manual Tes
 
 Số liệu được tổng hợp từ bộ Test Case đã ghi nhận, không phải kết quả của một lần chạy kiểm thử mới. Các trường hợp Fail chưa được quy đổi thành số lượng Bug Report độc lập.
 
-## 4. Tài liệu kiểm thử
+## 4. Tài liệu phân tích và kiểm thử
 
 | Thư mục | Nội dung |
 |---|---|
-| [01-Test-Plan](./01-Test-Plan/) | Kế hoạch kiểm thử: mục tiêu, phạm vi, phương pháp, môi trường, tiêu chí và rủi ro. |
-| [02-Test-Cases](./02-Test-Cases/) | Bộ 177 Test Case, dữ liệu kiểm thử và kết quả thực thi ở định dạng Excel/PDF. |
+| [01-Requirement-Analysis](./01-Requirement-Analysis/) | Tài liệu đặc tả yêu cầu phần mềm (SRS) và mô hình nghiệp vụ; file SRS sẽ được bổ sung sau. |
+| [02-Test-Plan](./02-Test-Plan/) | Kế hoạch kiểm thử: mục tiêu, phạm vi, phương pháp, môi trường, tiêu chí và rủi ro. |
+| [03-Test-Cases](./03-Test-Cases/) | Bộ 177 Test Case, dữ liệu kiểm thử và kết quả thực thi ở định dạng Excel/PDF. |
 
 **Xem nhanh tài liệu:**
 
-- [Test Plan (PDF)](./01-Test-Plan/Test%20Plan.pdf)
-- [Test Cases (Excel)](./02-Test-Cases/CV_TestCase_ĐALN.xlsx)
-- [Test Cases (PDF)](./02-Test-Cases/CV_TestCase_ĐALN.pdf)
+- [Test Plan (PDF)](./02-Test-Plan/Test%20Plan.pdf)
+- [Test Cases (Excel)](./03-Test-Cases/CV_TestCase_ĐALN.xlsx)
+- [Test Cases (PDF)](./03-Test-Cases/CV_TestCase_ĐALN.pdf)
 - [Mã nguồn hệ thống](https://github.com/haiha74/DALN)
 
 ## 5. Phạm vi đóng góp và lưu ý
