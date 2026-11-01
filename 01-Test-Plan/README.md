@@ -1,17 +1,45 @@
 # Kế hoạch kiểm thử – Hệ thống quản lý thời trang
 
-**Nguồn:** Báo cáo học phần Đánh giá và Kiểm định chất lượng phần mềm, chương III (2026).
+## 1. Giới thiệu
 
-## Phạm vi kiểm thử trọng tâm
+Thư mục `01-Test-Plan` lưu trữ tài liệu kế hoạch kiểm thử thủ công (Manual Test Plan) cho dự án **Hệ thống quản lý thời trang**.
 
-| Use Case | Các nội dung kiểm thử |
-|---|---|
-| UC01 – Đăng ký | Đăng ký hợp lệ; email trùng/sai định dạng; dữ liệu trống; mật khẩu không hợp lệ |
-| UC02 – Đăng nhập | Tài khoản hợp lệ/không tồn tại; mật khẩu sai; quản lý phiên; kiểm soát quyền |
-| UC05 – Quản lý giỏ hàng | Xem/thêm/xóa hàng; cập nhật số lượng; kiểm tra biến thể và tồn kho |
+Tài liệu xác định mục tiêu, phạm vi, phương pháp, môi trường, chiến lược thực hiện và các tiêu chí đánh giá hoạt động kiểm thử, làm cơ sở cho việc thiết kế, thực thi Test Case và tổng hợp kết quả.
 
-**Phương pháp:** kiểm thử hộp đen thủ công; Unit Test bằng JUnit 5/Mockito và báo cáo độ phủ JaCoCo; tự động hóa giao diện bằng Selenium; hiệu năng API bằng JMeter.
+## 2. Phạm vi kiểm thử
 
-**Ngoài phạm vi chuyên sâu của báo cáo kiểm thử:** thanh toán PayOS, quản lý kho, sản phẩm, khuyến mãi, thống kê doanh thu và các nghiệp vụ khác của hệ thống.
+Kế hoạch tập trung vào **177 Test Case thuộc 14 nhóm chức năng chính**, bao gồm:
 
-Đây là bản giới thiệu trích ý từ tài liệu nhóm, chưa phải file Test Plan nguyên bản đã xử lý thông tin cá nhân.
+- **Tài khoản:** Đăng ký, đăng nhập và quản lý phiên.
+- **Mua sắm:** Tìm kiếm sản phẩm, biến thể, giỏ hàng, voucher, đặt hàng và thanh toán.
+- **Đơn hàng:** Quản lý trạng thái đơn hàng và đánh giá sản phẩm.
+- **Quản trị:** Quản lý sản phẩm, biến thể, tồn kho và khuyến mãi.
+- **Chức năng hỗ trợ:** Chatbot tìm kiếm sản phẩm, banner và giao diện.
+
+## 3. Phương pháp kiểm thử
+
+- **Phương pháp:** Manual Testing kết hợp Black-box Testing.
+- **Loại kiểm thử:** Functional Testing, UI Testing, Input Validation Testing và Workflow Testing.
+- **Kỹ thuật thiết kế:** Equivalence Partitioning, Boundary Value Analysis và Scenario-based Testing.
+- **Công cụ hỗ trợ:** Microsoft Excel, Google Chrome, Chrome DevTools và Postman.
+- **Môi trường:** Windows 11, Java Spring Boot, MySQL và Localhost.
+
+## 4. Nội dung tài liệu
+
+Test Plan bao gồm các nội dung chính:
+
+1. Giới thiệu hệ thống và mục đích lập kế hoạch.
+2. Mục tiêu và phạm vi kiểm thử.
+3. Phương pháp và chiến lược kiểm thử.
+4. Môi trường, công cụ và dữ liệu kiểm thử.
+5. Tiêu chí bắt đầu, tạm dừng và kết thúc kiểm thử.
+6. Quy trình ghi nhận, phân loại và theo dõi lỗi.
+7. Lịch trình và phân công trách nhiệm.
+8. Quản lý rủi ro kiểm thử.
+9. Tổng kết.
+
+## 5. Tài liệu
+
+**[Xem Test Plan (PDF)](./Test%20Plan.pdf)**
+
+Tài liệu được xây dựng phục vụ hoạt động kiểm thử thủ công và làm cơ sở theo dõi, đánh giá chất lượng các chức năng chính của hệ thống.
